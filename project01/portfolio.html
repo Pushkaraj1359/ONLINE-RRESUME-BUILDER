@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUSHKARAJ KULKARNI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+       
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav
+        {
+            width: 100vw;
+            height:15vh;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 50px;
+            position: fixed; 
+            margin-bottom:20px;
+            z-index: 2;
+        }
+        .menu_bar{
+            display: none;
+        }
+        @media (max-width : 2550px) {
+         nav  ul li {
+            display: none;
+         } 
+         .menu_bar{
+            display: block;
+        }
+         .menu_bar{
+            font-size: 200px;
+            padding-top: 50px;
+            padding-right:50px;
+         }  
+        }
+        @media (max-width :  1024px){
+            .menu_bar{
+            font-size: 120px;
+            padding-bottom:10px;
+            padding-right:20px;
+         }
+        }
+        @media (max-width :  1280px){
+            .menu_bar{
+            font-size: 80px;
+            padding-bottom:20px;
+            padding-right:20px;
+         }
+        }
+        @media (max-width :  768px){
+            .menu_bar{
+            font-size: 120px;
+            padding-top: 50px;
+            padding-right:20px;
+         }
+        }
+        @media (max-width :  425px){
+            .menu_bar{
+            font-size: 60px;
+            padding-bottom:30px;
+         }
+        }
+        @media (max-width :  280px){
+            .menu_bar{
+            font-size: 30px;
+            padding-bottom:30px;
+         }
+        }
+        .content
+        {
+            width: 8vw;
+            height: 12vh;
+            background-image: url("bappa.jpg");
+            background-size: contain;
+            border: 4px solid white;
+            border-radius: 50%;
+            padding:1% 0%;
+            margin-left:5% ;    
+        }
+        @media (max-width :1440px)  {
+            .content{
+                width: 12vw;
+                height: 12vh; 
+            }  
+        }
+        @media (max-width : 768px)  {
+            .content{
+                width: 14vw;
+                height: 10vh; 
+                border-radius: 10%;
+
+            } 
+        } 
+        @media (max-width : 425px)  {
+            .content{
+                width: 14vw;
+                height: 10vh; 
+                border-radius: 50%;
+                background-size: cover;
+
+            } 
+        }
+        @media (max-width : 280px)  {
+            .content{
+                width: 50px;
+                height: 70px; 
+                border-radius: 2%;
+                background-size: cover;
+                position: relative;
+                right:30px;
+
+            } 
+        }
+        .content:hover
+        {
+            border: 10px solid orangered;
+            cursor: pointer;
+        } 
+        
+        nav ul
+        {
+            float: right;
+        }
+        nav li
+        {
+            display: inline-block;
+            list-style: none;
+            font-size: 80px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-left: 100px;
+            color: white;
+            border:4px solid transparent;
+            background-color:transparent;
+        }
+        nav li :hover
+        {
+            background-color:white;
+            color:orange;
+            border: 4px solid rgb(153, 189, 25);
+        }
+        nav ul li a
+        {
+            text-decoration: none;
+            text-transform: uppercase;
+            text-decoration-style: none;
+            color: white;
+        }
+        main
+        {
+            width: 100vw;
+            height: 100vh;
+            background-color: bisque;
+            display: flex;   
+        }
+        .detail
+        {
+            width: 30vw;
+            height:40vh;
+            /* background-color: red;    */
+            position: relative;
+            top: 1123px;
+            left: 800px;
+            bottom:300px
+        }
+        .detail .first
+        {
+            font-size: 200px;
+            font-weight: 400; 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+        }
+        .detail .first1
+        {
+            font-size: 189px;
+            font-weight: 400; 
+            font-family: 'Times New Roman', Times, serif;
+            color: orangered;
+            font-style: italic; 
+            position: relative;
+            left:20px;
+        }
+        
+        .detail .second
+        {
+            font-size: 150px;
+            font-weight: 400; 
+            padding-bottom: 20px; 
+            padding-left: 50px;
+        }
+        .detail p
+        {
+            font-size: 70px;
+            font-weight: 200;
+            font-style: italic;
+            color: black;
+            line-height : 100px;
+            margin-left: 100px;
+
+        }
+        .detail span .infor
+        {
+            font-size: 12px;
+            color: black;
+            padding-top: 50px;
+        }
+        .image
+        {
+            width: 30vw;
+            height: 70vh;  
+            background-image: url("my_photo.jpg");
+            background-size: cover; 
+            border-bottom:60px solid 10px;
+            border-radius:50%;
+            position: relative;
+            left: 1600px;
+            top: 100px;
+        }
+        .image:hover
+        {
+           border:20px solid yellow;    
+        }
+        .social
+        {
+            width:30vw;
+            height:6vh;
+            /* background-color: aqua;  */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position:relative;
+            top:250px;
+            left: 400px;
+        }
+        .social li 
+        {
+            display: inline-block;
+            margin: 30px;
+        }
+        .social li a
+        {
+            width: 70px;
+            height: 25px;
+            background-color:orangered;
+            padding:0px auto;
+            font-size: 100px;
+            font-weight:bold;
+            border:4px solid transparent;
+            border-radius: 50%;
+            color:rgb(45, 171, 202);
+            text-decoration: none;
+        }
+        .social li a:hover
+        {
+            border:10px solid black;
+        }
+        .social li .con:hover
+        {
+         color: orange;   
+        }
+        .social .con:hover
+        {
+            color:white;
+            background-color:black;
+        }
+        .main2
+        {
+            width: 100vw;
+            height: 80vh;
+            background-color: #29cacf;
+            line-height: 100px;
+        }
+        .main2 .photo
+        {
+            width: 14vw;
+            height: 30vh;
+            /* background-color: aqua; */
+            background-image: url("./my_photo2.jpg");
+            background-size: contain;
+            border: 4px double orange;
+            border-radius:10%;
+            position: relative;
+            top: 250px;
+            left: 400px;
+        }
+        .main2 .about
+        {
+            width: 50vw;
+            height: 50vh;
+            /* background-color: red; */
+            color: white;
+            float: right; 
+            position: relative;
+            bottom: 90px;
+            right:500px;
+            margin-bottom: 100px;
+        }
+        .main2 .about .ab
+        {
+            font-size: 200px;
+            font-style: oblique;
+            padding-left : 10px;
+            margin-bottom: 50px;
+            color: black;
+            line-height : 200px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+        }
+        .main2 .about .contain
+        {
+            
+            margin-left : 200px; 
+            font-size: 70px;
+            font-weight: 200;
+            font-style: italic;
+            color: black;
+            line-height: 100px;
+        }
+        .my_skill
+        {
+            width:100vw;
+            height:80vh;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: end;
+        }
+        .my_skill
+        {
+            font-size:3rem;
+        }
+        .box1,
+        .box2,
+        .box3
+        {
+            position: relative;
+            right: 100px;
+        }
+        .my_skill .skill
+        {
+            font-size : 200px;
+            color:white;
+            border-bottom: 4px dotted transparent;
+            border-radius: 0%;
+            /* background-color: white;
+            border:10px solid yellow;  */
+            /* border-radius:10%; */
+            padding: 5px;
+            position: relative;
+            bottom: 1600px;
+            left:2000px;
+        }
+        .my_skill .skill p:hover
+        {
+            color:orange;
+            border-radius: 50%;
+            border-bottom: 4px dotted white;
+        }
+        .my_skill .box1
+        {
+            width:20vw;
+            height:30vh;
+            background-color:#ccc;
+            border: 10px solid yellow;
+            border-radius:5%;
+            position: relative;
+            bottom: 350px;
+            right:800px;
+            display: flex; 
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        } 
+        .my_skill .box1:hover
+        {
+            width:22vw;
+            height:32vh;
+            background-color: aqua;   
+        }
+        .box1 .java
+        {
+            width:60px;
+            height:30px;
+            font-size:150px;
+            padding-left:13px;
+            padding-top:40px;
+            /* background-color: #ccc; */
+            position:relative;
+            right:150px;
+            bottom:100px;
+            text-decoration: none;
+        }
+        .box1 .java:hover
+        {
+            text-decoration: underline;
+        }
+        .box1 .javaab
+        {
+            width:900px;
+            height:500px;
+            /* background-color: aqua; */  
+        }
+        .box1 .javaab p
+        {
+            font-size:65px;
+            padding-left:66px;
+        }
+        .my_skill .box2
+        {
+            width:20vw;
+            height:30vh;
+            background-color:#ccc;  
+            border: 10px solid yellow;
+            border-radius: 5%; 
+            position: relative;
+            bottom: 350px;
+            right:400px;
+            display: flex; 
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .my_skill .box2:hover
+        {
+            width:22vw;
+            height:32vh;
+            background-color: aqua;   
+        }
+        .box2 .python
+        {
+            width:60px;
+            height:30px;
+            font-size:150px;
+            padding-left:13px;
+            padding-top:40px;
+            /* background-color: #ccc; */
+            position:relative;
+            right:270px;
+            bottom:100px;
+            text-decoration: none;
+        }
+        .box2 .python:hover
+        {
+            text-decoration: underline;
+        }
+        .box2 .pythonab
+        {
+            width:900px;
+            height:500px;
+            /* background-color: aqua; */  
+        }
+        .box2 .pythonab p
+        {
+            font-size:65px;
+            padding-left:66px;
+        } 
+        .my_skill .box3
+        {
+            width:20vw;
+            height:30vh;
+            background-color:#ccc;
+            border: 10px solid yellow; 
+            border-radius: 5%;
+            position: relative;
+            bottom: 350px;  
+            display: flex; 
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .my_skill .box3:hover
+        {
+            width:22vw;
+            height:32vh;
+            background-color: aqua;   
+        }
+        .box3 .basic_web_creater span
+        {
+            width:60px;
+            height:30px;
+            font-size:100px;
+            text-transform: uppercase;
+            padding-left:13px;
+            padding-top:5px;
+            /* background-color: #ccc; */
+            position:relative;
+            right:270px;
+            bottom:20px;
+            left:40px;
+            text-decoration: none;
+        }
+       
+        .box3 .basic_web_creater span:hover
+        {
+            text-decoration: underline;
+        }
+        .box3 .web_ab
+        {
+            width:900px;
+            height:500px;
+            /* background-color: aqua; */
+            position: relative;
+            bottom:40px;
+           
+        }
+        .box3 .web_ab p
+        {
+            font-size:65px;
+            padding-left:66px;
+        } 
+          
+        footer
+        {
+            width:100vw;
+            height:8vh;
+            background-color: khaki;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        footer p
+        {
+            font-size: 80px;
+            font-weight: 400;
+            font-style: var(#29cacf);
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 10px;
+        } 
+        @media (max-width :  1440px){
+            footer p {
+                font-size: 46px;
+                line-height:20px;
+            }
+        }
+        @media (max-width :  1024px){
+            footer p {
+                font-size: 30px;
+                line-height:50px;
+            }
+        }
+        @media (max-width : 768px){
+            footer p {
+                font-size: 20px;
+                line-height:25px;
+            }
+        }
+        @media (max-width : 425px){
+            footer p {
+                font-size: 15px;
+                line-height:18px;
+            
+            }
+        }
+        @media (max-width : 375px){
+            footer p {
+                font-size: 12px;
+            
+            }
+        }
+        @media (max-width : 320px){
+            footer p {
+                font-size: 10px;
+            }
+        }
+        @media (max-width : 1352px){
+            footer p {
+                font-size: 38px;
+                line-height:72px;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+   <nav>
+        <div class="content">
+           
+        </div>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="About Me.docx">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="contactpushu.txt.docx">contact</a></li>
+        </ul>
+        <div class="menu_bar">
+            *****
+        </div>
+   </nav>
+</body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <main>
+    <div class="detail">
+        <h1><span class="first">Hi, its me</span> <br>  <span class="second ">i am </span> <span class="first1">Pushkaraj</span><span class="infor"> <p> Experienced Full Stack Developer with 1 years of experience as fresher developing websites and
+            applications using the latest technologies. Proven ability to troubleshoot software issues and create
+            innovative solutions</p> </span></h1>
+         <div class="social">
+            <ul>
+                <li class="con"  style="font-size: 91px; margin-right:100px; "><b><u>Contact Us</u></b></li>
+                <li><a href="https://instagram.com/pushkaraj._01?igshid=ZDc4ODBmNjlmNQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/kulkarni-p-07807b283" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+      <div class="image">
+        
+      </div>
+      <div class="contact">
+        contact us
+      </div>
+   </main>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <div class="main2">
+       <div class="photo">
+
+        </div>
+        <div class="about">
+            <p class="ab"> <u>About Me</u>  : </p>
+            <br>
+            <span class="contain">
+            <span>
+                  <b style="color: brown;">software Developer.</b>
+                <br>
+                    -Student : <u>Savitribai Phule Pune Univercity </u> pune MAHARASHTRA,INDIA
+                    <br>
+                    <b style="color: brown;">TOP-SKILLS</b> :-  * <u>Software Development</u>
+                                          * <u>Web-developer</u>
+                                          <br>
+                # Creating Projects  Using  with Html, CSS, JavaScript.
+                                   <br>
+                #  I got many <u>offers for internships</u>. I have also <u>completed my
+                    internship projects.</u>
+            </span> 
+        </div>
+    </div>
+    <br> 
+    <div class="my_skill">
+           <span class="skill"> <p> Our Skills </p> </span>
+           <div class="box1">
+
+             <div class="java">
+                JAVA
+             </div>
+             <div class="javaab">
+                <p>i am leaning all of the <b>JAVA knowlege </b> and also <b> creating project </b> based on java programing language..! <b>practice pursuing in hackercode.com</b></p>
+             </div>
+           </div>
+
+           <div class="box2">
+            <div class="python">
+                PYTHON
+             </div>
+             <div class="pythonab">
+                <p>i am leaning all of the <b>PYTHON knowlege </b> and also <b> creating project </b> based on java programing language..! <b>practice pursuing in hackercode.com</b></p>
+             </div>
+           </div>
+
+           <div class="box3">
+            <div class="basic_web_creater">
+                <span>Web Developer</span>
+             </div>
+             <div class="web_ab">
+                <p>i am leaning all of the <b>WEB Development knowlege </b> and also <b> creating project </b> based on java programing language..! <b>practice pursuing in hackercode.com</b></p>
+             </div>
+           </div>
+    </div>
+ <br><br><br> 
+    <footer> 
+        <p>Copy right &copy;:Designed By <i style="color:slateblue;">COMCODE.COM</i></p>  
+    </footer>
+    <br><br><br><br>  
+</html>
